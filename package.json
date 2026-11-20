@@ -1,0 +1,19 @@
+{
+  "name": "liga-golf-baviera",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Plataforma de la Liga de Golf Baviera: clasificaciones, tarjetas live y tienda.",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "db:reset": "node --env-file-if-exists=.env db.js --reset",
+    "db:demo": "node --env-file-if-exists=.env db.js --reset --demo"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.6",
+    "nodemailer": "^10.6.1"
+  }
+}
